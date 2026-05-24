@@ -1,0 +1,65 @@
+/* ═══════════════════════════════════════════
+   RESET — Modern CSS Reset
+   Basé sur les meilleures pratiques 2024
+═══════════════════════════════════════════ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Empêche les dépassements non voulus */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Médias fluides */
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Héritage typographie pour les inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Évite les débordements de texte longs */
+p,
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Retire le style par défaut des listes dans les nav */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Animations réduites si l'utilisateur le préfère */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
