@@ -31,16 +31,14 @@
     <!-- Skip link pour accessibilité clavier -->
     <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
-    <!-- ═══════════════════════════════════════
-         HEADER / NAV
-    ═══════════════════════════════════════ -->
+    <!-- header et la nav -->
     <header class="header" role="banner">
       <nav class="nav container" aria-label="Navigation principale">
         <a href="#hero" class="nav__logo" aria-label="Retour en haut de page">
-          <span aria-hidden="true">✦</span> Josue Makengo
+          <span aria-hidden="true">✦</span> JM
         </a>
 
-        <!-- Burger button (mobile) -->
+        <!-- bouton Burger pour la version mobile -->
         <button
           class="nav__burger"
           aria-label="Ouvrir le menu"
@@ -59,7 +57,7 @@
           <li><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
 
-        <!-- Toggle dark mode -->
+        <!-- bouton dark mode -->
         <button
           class="theme-toggle"
           id="theme-toggle"
@@ -84,9 +82,7 @@
 
     <main id="main-content">
 
-      <!-- ═══════════════════════════════════════
-           HERO
-      ═══════════════════════════════════════ -->
+      <!-- le hero -->
       <section class="hero" id="hero" aria-labelledby="hero-title">
         <div class="hero__bg" aria-hidden="true">
           <div class="hero__orb hero__orb--1"></div>
@@ -98,7 +94,7 @@
           <p class="hero__tag animate-in" aria-label="Titre professionnel">Développeur Frontend Junior</p>
           <h1 class="hero__title animate-in" id="hero-title">
             Salut, je suis<br />
-            <span class="hero__name">Josue</span>
+            <span class="hero__name">Josue Makengo</span>
           </h1>
           <p class="hero__sub animate-in">
             Je transforme des maquettes en interfaces <strong>accessibles</strong>,
@@ -116,9 +112,7 @@
         </div>
       </section>
 
-      <!-- ═══════════════════════════════════════
-           À PROPOS
-      ═══════════════════════════════════════ -->
+      <!-- à propos -->
       <section class="about section" id="about" aria-labelledby="about-title">
         <div class="container">
           <div class="section__header">
@@ -142,10 +136,10 @@
               </a>
             </div>
 
-            <!-- Timeline parcours -->
+            <!-- timeline parcours -->
             <ol class="timeline" aria-label="Mon parcours">
               <li class="timeline__item">
-                <time class="timeline__date" datetime="2024">2024</time>
+                <time class="timeline__date" datetime="2024">2023</time>
                 <div class="timeline__content">
                   <h3 class="timeline__title">Formation OpenClassrooms</h3>
                   <p>HTML5, CSS3, SASS, JavaScript, Figma, Git</p>
@@ -162,7 +156,7 @@
                 <time class="timeline__date" datetime="2025">2025</time>
                 <div class="timeline__content">
                   <h3 class="timeline__title">À la recherche d'opportunités</h3>
-                  <p>Stage / Alternance / CDI junior</p>
+                  <p>Stage / Junior</p>
                 </div>
               </li>
             </ol>
@@ -170,9 +164,7 @@
         </div>
       </section>
 
-      <!-- ═══════════════════════════════════════
-           PROJETS
-      ═══════════════════════════════════════ -->
+      <!-- Projets -->
       <section class="projects section" id="projects" aria-labelledby="projects-title">
         <div class="container">
           <div class="section__header">
@@ -191,7 +183,7 @@
           <!-- Grille projets -->
           <ul class="projects__grid" id="projects-grid" role="list" aria-live="polite" aria-atomic="false">
 
-            <!-- Carte projet (duplique ce bloc pour chaque projet) -->
+            <!-- Carte projet  -->
             <li class="project-card" data-category="html-css javascript" role="article">
               <div class="project-card__img-wrapper">
                 <img
@@ -295,9 +287,7 @@
         </div>
       </section>
 
-      <!-- ═══════════════════════════════════════
-           COMPÉTENCES
-      ═══════════════════════════════════════ -->
+      <!-- Compétences -->
       <section class="skills section" id="skills" aria-labelledby="skills-title">
         <div class="container">
           <div class="section__header">
@@ -337,9 +327,7 @@
         </div>
       </section>
 
-      <!-- ═══════════════════════════════════════
-           CONTACT
-      ═══════════════════════════════════════ -->
+      <!-- Contact -->
       <section class="contact section" id="contact" aria-labelledby="contact-title">
         <div class="container">
           <div class="section__header">
@@ -349,7 +337,7 @@
 
           <div class="contact__wrapper">
             <div class="contact__intro">
-              <p>Disponible pour un stage, une alternance ou un poste junior. N'hésite pas à me contacter !</p>
+              <p>Disponible pour un stage ou un poste junior. N'hésite pas à me contacter !</p>
               <ul class="contact__socials" role="list">
                 <li>
                   <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer" aria-label="Mon profil LinkedIn (ouvre un nouvel onglet)">
@@ -366,7 +354,7 @@
 
             <!-- Formulaire -->
             <div class="contact__form-wrapper" role="region" aria-label="Formulaire de contact">
-              <!-- NOTE : utilise un service comme Formspree ou EmailJS pour l'envoi réel -->
+              <!-- je vais utilisé  le service comme Formspree ou EmailJS pour l'envoi réel des messages -->
               <div id="contact-form" class="contact__form" novalidate>
 
                 <div class="form-group">
@@ -380,7 +368,7 @@
                     required
                     aria-required="true"
                     aria-describedby="name-error"
-                    placeholder="Jean Dupont"
+                    placeholder="Josue Makengo"
                   />
                   <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
                 </div>
@@ -396,7 +384,7 @@
                     required
                     aria-required="true"
                     aria-describedby="email-error"
-                    placeholder="jean@exemple.com"
+                    placeholder="josmakengim@gmail.com"
                   />
                   <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
                 </div>
@@ -431,9 +419,7 @@
 
     </main>
 
-    <!-- ═══════════════════════════════════════
-         FOOTER
-    ═══════════════════════════════════════ -->
+    <!-- Footer -->
     <footer class="footer" role="contentinfo">
       <div class="container footer__inner">
         <p class="footer__copy">
